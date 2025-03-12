@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Study Reminder",
+    "version": "1.0",
+    "description": "Displays a study reminder overlay for 10 seconds when opening a website",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["style.css"]
+      }
+    ],
+    "web_accessible_resources": [
+    {
+      "resources": ["images/Zoro.jpeg"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+    "icons": {
+      "128": "images/icon128.png"
+    }
+  }
