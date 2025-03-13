@@ -21,11 +21,14 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
-  .study-card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-  }
+  /* Modified image styling */
+.study-card img {
+  width: 80%; /* Reduced from 100% */
+  max-width: 300px; /* Added to limit maximum size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  margin: 0 auto 1rem; /* Centered horizontally */
+}
   
   .study-card h1 {
     color: #2c3e50;
